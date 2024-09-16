@@ -32,6 +32,8 @@ sudo unzip -o assets/certs.zip -d /etc/grid-security/certificates/
 echo -e "\n--> Copying the CMS vomses"
 sudo mkdir -p /etc/grid-security/vomsdir/
 sudo cp -r assets/cms/ /etc/grid-security/vomsdir/
+sudo mkdir -p /etc/vomses/
+sudo cp -r assets/vomses/* /etc/vomses/
 echo -e "\n--> Copying the gsi configuration"
 sudo cp assets/gsi.conf /etc/grid-security/
 echo "-----------------------Setup Complete--------------------------"
